@@ -1,3 +1,29 @@
-h1{
-    color: red;
+/* header */
+header{
+    display: flex;
 }
+
+.content{
+    position: relative;
+    overflow: hidden;
+    width: 100vw;
+}
+
+.video{
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: 1;
+}
+
+.overlay{
+    position: absolute;
+    top: 0;
+    left: 0;
+    
+}
+
+.panneau_header{
+    display: flex;
+}
+
