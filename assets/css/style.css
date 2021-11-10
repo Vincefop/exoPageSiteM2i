@@ -1,29 +1,181 @@
-/* header */
+/*RESET CSS*/
+/* http://meyerweb.com/eric/tools/css/reset/ 
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed, 
+figure, figcaption, footer, header, hgroup, 
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure, 
+footer, header, hgroup, menu, nav, section {
+	display: block;
+}
+body {
+	line-height: 1;
+}
+ol, ul {
+	list-style: none;
+}
+blockquote, q {
+	quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+	content: '';
+	content: none;
+}
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+}
+
+
+
+/* HEADER */
 header{
     display: flex;
 }
 
+/*CONTENT*/
 .content{
     position: relative;
     overflow: hidden;
-    width: 100vw;
+    width: 100%;
+    font-family: "Graphik", Arial, Helvetica, sans-serif;
+    color: #FFF;
+}
+a{
+    color: #FFF;
 }
 
-.video{
-    position: absolute;
-    top: 0;
-    left: 0;
-    z-index: 1;
-}
 
-.overlay{
-    position: absolute;
-    top: 0;
-    left: 0;
-    
-}
 
-.panneau_header{
-    display: flex;
-}
+    .video{
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        z-index: 1;
+    }
+
+    video{
+        width: 100%;
+    }
+
+    .overlay{
+        position: absolute;
+        top: 0;
+        left: 0;
+        z-index: 2;
+        width: 100%;
+        height: 100%;
+        opacity: 0.7;
+        background: -moz-linear-gradient(113deg, rgba(255,0,0,0.7) 0%, rgba(0,5,120,0.7) 70%);
+        background: -webkit-linear-gradient(113deg, rgba(255,0,0,0.7) 0%,rgba(0,5,120,0.7) 70%);
+        background: linear-gradient(113deg, rgba(255,0,0,0.7) 0%,rgba(0,5,120,0.7) 70%);
+        filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#ccff0000', endColorstr='#85000578',GradientType=1 );
+    }
+
+
+
+
+    .wrapper{
+        z-index: 5;
+        position: relative;
+    }
+
+        .panneau_header{
+            display: flex;
+            justify-content: space-around;
+            align-items: center;
+        }
+
+            .goals{
+                line-height: 1.2em;
+                font-size: 120%;
+                font-weight: 700;
+            }
+            
+            .menu>ul{
+                font-size: 90%;
+                font-weight: 700;
+            }
+            .menu>ul li{
+                list-style-type: none;
+                display: inline;
+                position: relative;
+                margin-left: 1vw;
+                text-transform: uppercase;
+            }
+            .menu>ul li:hover{
+                text-decoration:underline;
+                cursor: pointer;
+            }
+            .menu a{
+                text-decoration:none
+            }
+            /*Pour m'entrainer au moins une fois : j'utilise nth-child*/
+            .menu>ul li:nth-child(8), .menu>ul li:nth-child(9), .menu>ul li:nth-child(10), .menu>ul li:nth-child(11){
+                font-size: 150%;
+                padding-top: -5vh;
+            }
+            
+
+
+
+
+        .centralForm{
+            display: flex;
+            justify-content: space-around;
+            align-items: center;
+            margin-top: 27vh;
+        }
+            .textRecherche{
+                text-align: center;
+                justify-content: space-around;
+            }
+
+            .textRecherche h2{
+                font-size: 130%;
+                font-weight: 400;
+                letter-spacing: 0.04em;
+            }
+
+            .textRecherche h1{
+                margin-top: 3vh;
+                font-size: 280%;
+                font-weight: 800;
+                letter-spacing: 0.0em;
+            }
+
+            .inputText{
+                
+            }
+
+        .avis{
+            display: flex;
+            justify-content: space-around;
+            align-items: center;
+            margin-top: 10vh;
+        }
+
 
