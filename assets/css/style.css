@@ -68,7 +68,7 @@ a{
 }
 
 
-
+    /* LA VIDEO*/
     .video{
         position: absolute;
         top: 0;
@@ -103,7 +103,7 @@ a{
         z-index: 5;
         position: relative;
     }
-
+        /*LE PANNEAU DU MENU*/
         .panneau_header{
             display: flex;
             justify-content: space-around;
@@ -142,7 +142,7 @@ a{
             
 
 
-
+        /*LE FORMULAIRE CENTRAL*/
         .centralForm{
             display: flex;
             justify-content: space-around;
@@ -218,21 +218,18 @@ a{
                 text-decoration:none;
             }
 
+            /* LES AVIS ETOILES ET L'ICONE*/
             .avis a{
-                display: flex;
                 margin-top: 10vh;
                 width: 100%;
                 text-align: center;
+                align-items: center;
                 text-decoration:none;
                 font-size: 145%;
                 font-weight: 600;
                 position: relative;
-            }
-            
-            .avis img{
-                height: 1em;
-                width: auto;
-                margin-top: 0.2em;
+                display: flex;
+                justify-content: center;
             }
 
             .avis>a>ul li{
@@ -242,6 +239,14 @@ a{
                 padding-left: 0.2em;
                 font-weight: normal;
                 color: #FC0;
+            }
+
+            .avis img{
+                height: 1em;
+                width: auto;
+                margin-top: 0.2em;
+                align-items: center;
+                
             }
 
 
